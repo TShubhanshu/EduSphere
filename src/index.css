@@ -1,0 +1,163 @@
+/* stylelint-disable */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here.
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+    
+    /* Educational theme - Blue (knowledge/trust) and Green (growth/success) */
+    --background: 0 0% 100%;
+    --foreground: 217 33% 17%;
+    
+    --card: 0 0% 100%;
+    --card-foreground: 217 33% 17%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 217 33% 17%;
+    
+    /* Primary: Educational Blue */
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Secondary: Growth Green */
+    --secondary: 160 84% 39%;
+    --secondary-foreground: 0 0% 100%;
+    
+    /* Muted backgrounds */
+    --muted: 217 20% 95%;
+    --muted-foreground: 217 15% 45%;
+    
+    /* Accent: Light Blue */
+    --accent: 210 100% 95%;
+    --accent-foreground: 217 91% 60%;
+    
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    
+    --border: 217 20% 88%;
+    --input: 217 20% 88%;
+    --ring: 217 91% 60%;
+    
+    /* Educational color tokens */
+    --education-blue: 217 91% 60%;
+    --education-green: 160 84% 39%;
+    
+    /* Status colors */
+    --success: 160 84% 39%;
+    --warning: 38 92% 50%;
+    --info: 199 89% 48%;
+    
+    /* Chart colors */
+    --chart-1: 217 91% 60%;
+    --chart-2: 160 84% 39%;
+    --chart-3: 38 92% 50%;
+    --chart-4: 271 81% 56%;
+    --chart-5: 340 82% 52%;
+    
+    /* Sidebar */
+    --sidebar-background: 217 25% 98%;
+    --sidebar-foreground: 217 33% 17%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 217 20% 95%;
+    --sidebar-accent-foreground: 217 33% 17%;
+    --sidebar-border: 217 20% 88%;
+    --sidebar-ring: 217 91% 60%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 60%), hsl(199, 89%, 48%));
+    --gradient-card: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(217, 20%, 98%));
+    --gradient-background: linear-gradient(180deg, hsl(0, 0%, 100%), hsl(217, 20%, 98%));
+    
+    /* Shadows */
+    --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+
+  .dark {
+    --background: 217 33% 10%;
+    --foreground: 217 20% 95%;
+    
+    --card: 217 30% 13%;
+    --card-foreground: 217 20% 95%;
+    
+    --popover: 217 30% 13%;
+    --popover-foreground: 217 20% 95%;
+    
+    /* Primary: Educational Blue (lighter in dark mode) */
+    --primary: 217 91% 65%;
+    --primary-foreground: 217 33% 10%;
+    
+    /* Secondary: Growth Green (lighter in dark mode) */
+    --secondary: 160 70% 45%;
+    --secondary-foreground: 217 33% 10%;
+    
+    --muted: 217 25% 18%;
+    --muted-foreground: 217 15% 65%;
+    
+    --accent: 217 40% 20%;
+    --accent-foreground: 217 91% 65%;
+    
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 217 20% 95%;
+    
+    --border: 217 25% 22%;
+    --input: 217 25% 22%;
+    --ring: 217 91% 65%;
+    
+    --education-blue: 217 91% 65%;
+    --education-green: 160 70% 45%;
+    
+    --success: 160 70% 45%;
+    --warning: 38 92% 55%;
+    --info: 199 89% 55%;
+    
+    --chart-1: 217 91% 65%;
+    --chart-2: 160 70% 45%;
+    --chart-3: 38 92% 55%;
+    --chart-4: 271 81% 65%;
+    --chart-5: 340 82% 60%;
+    
+    --sidebar-background: 217 30% 13%;
+    --sidebar-foreground: 217 20% 95%;
+    --sidebar-primary: 217 91% 65%;
+    --sidebar-primary-foreground: 217 33% 10%;
+    --sidebar-accent: 217 25% 18%;
+    --sidebar-accent-foreground: 217 20% 95%;
+    --sidebar-border: 217 25% 22%;
+    --sidebar-ring: 217 91% 65%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(217, 91%, 65%), hsl(199, 89%, 55%));
+    --gradient-card: linear-gradient(135deg, hsl(217, 30%, 13%), hsl(217, 25%, 18%));
+    --gradient-background: linear-gradient(180deg, hsl(217, 33%, 10%), hsl(217, 30%, 13%));
+    
+    --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.3), 0 1px 2px -1px rgb(0 0 0 / 0.3);
+    --shadow-hover: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--education-green)));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
