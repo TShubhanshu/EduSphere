@@ -1,8 +1,110 @@
-# Welcome to Your Miaoda Project
-Miaoda Application Link URL
-    URL:https://medo.dev/projects/app-8zahvhk1k6pt
+Edusphere – School Website Platform
+📘 Project Overview
 
-# Welcome to Your Miaoda Project
+Edusphere is a modern, secure, and responsive school website platform designed to manage user authentication, profiles, and dashboard-based content. The application demonstrates full-stack development principles with a focus on security, scalability, and clean architecture.
+
+This project is suitable for academic evaluation, internships, and real-world school management use cases.
+
+🚀 Features
+🔐 User Authentication
+
+User Signup with form validation
+
+User Login using JWT-based authentication
+
+Password hashing for enhanced security
+
+Secure Logout functionality
+
+👤 User Profile Management
+
+View user profile details
+
+Update profile information
+
+Profile data fetched securely from backend APIs
+
+📊 Dashboard Functionalities
+
+Protected routes (accessible only after login)
+
+CRUD operations on a sample entity (Tasks / Notes / Posts)
+
+Search functionality
+
+Filter UI for content management
+
+✅ Form Validation & Error Handling
+
+Client-side validation (frontend)
+
+Server-side validation (backend)
+
+User-friendly error messages and validation feedback
+
+🛠️ Tech Stack
+Frontend
+
+Responsive UI design
+
+Form validation
+
+Protected route implementation
+
+Dashboard interface
+
+Reusable and modular components
+
+Backend
+
+RESTful APIs for:
+
+Signup & Login
+
+Profile Fetch & Update
+
+CRUD operations
+
+JWT authentication middleware
+
+Password hashing
+
+Centralized error handling
+
+Database
+
+User authentication data
+
+User profile information
+
+Sample entity data (tasks / notes / posts)
+
+🔒 Security Features
+
+Password hashing
+
+JWT-based authentication
+
+Protected API endpoints
+
+Input validation on both client & server
+
+🧩 Application Pages
+🌐 Public Pages
+
+Homepage
+
+Login Page
+
+Signup Page
+
+🔐 Protected Pages
+
+User Dashboard
+
+Profile Page
+
+Content Management Interface
 
 ## Project Info
 
@@ -43,53 +145,42 @@ Vite, TypeScript, React, Supabase
 
 ## Development Guidelines
 
-### How to edit code locally?
 
-You can choose [VSCode](https://code.visualstudio.com/Download) or any IDE you prefer. The only requirement is to have Node.js and npm installed.
+⚙️ Installation & Setup
+Prerequisites
 
-### Environment Requirements
+Node.js
 
-```
-# Node.js ≥ 20
-# npm ≥ 10
-Example:
-# node -v   # v20.18.3
-# npm -v    # 10.8.2
-```
+Database (MongoDB / MySQL / PostgreSQL – as per implementation)
 
-### Installing Node.js on Windows
+Steps
 
-```
-# Step 1: Visit the Node.js official website: https://nodejs.org/, click download. The website will automatically suggest a suitable version (32-bit or 64-bit) for your system.
-# Step 2: Run the installer: Double-click the downloaded installer to run it.
-# Step 3: Complete the installation: Follow the installation wizard to complete the process.
-# Step 4: Verify installation: Open Command Prompt (cmd) or your IDE terminal, and type `node -v` and `npm -v` to check if Node.js and npm are installed correctly.
-```
+Clone the repository
 
-### Installing Node.js on macOS
+Install frontend and backend dependencies
 
-```
-# Step 1: Using Homebrew (Recommended method): Open Terminal. Type the command `brew install node` and press Enter. If Homebrew is not installed, you need to install it first by running the following command in Terminal:
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-Alternatively, use the official installer: Visit the Node.js official website. Download the macOS .pkg installer. Open the downloaded .pkg file and follow the prompts to complete the installation.
-# Step 2: Verify installation: Open Command Prompt (cmd) or your IDE terminal, and type `node -v` and `npm -v` to check if Node.js and npm are installed correctly.
-```
+Configure database connection
 
-### After installation, follow these steps:
+Run backend server
 
-```
-# Step 1: Download the code package
-# Step 2: Extract the code package
-# Step 3: Open the code package with your IDE and navigate into the code directory
-# Step 4: In the IDE terminal, run the command to install dependencies: npm i
-# Step 5: In the IDE terminal, run the command to start the development server: npm run dev -- --host 127.0.0.1
-# Step 6: if step 5 failed, try this command to start the development server: npx vite --host 127.0.0.1
-```
+Run frontend application
 
-### How to develop backend services?
+# How to develop backend services?
 
 Configure environment variables and install relevant dependencies.If you need to use a database, please use the official version of Supabase.
 
-## Learn More
+application
 
-You can also check the help documentation: Download and Building the app（ [https://intl.cloud.baidu.com/en/doc/MIAODA/s/download-and-building-the-app-en](https://intl.cloud.baidu.com/en/doc/MIAODA/s/download-and-building-the-app-en)）to learn more detailed content.
+📌 Additional Notes
+
+Designed with scalability in mind
+
+Follows best practices for authentication and security
+
+Suitable for academic projects, demos, and real-world school platforms
+
+📄 License
+
+This project is developed for educational and demonstration purposes.
+
+🔗 Live Project: https://tinyurl.com/Edusphereeee
